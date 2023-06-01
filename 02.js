@@ -12,8 +12,28 @@ function stringMasLarga(strings) {
   // stringMasLarga(['JavaScript', 'HTML', 'CSS']); debe retornar 'JavaScript'
 
   // Tu código aca
+  
 }
 
-// No modifiques nada debajo de esta linea //
+// Inicializamos una variable para almacenar el string más largo
+var masLarga = '';
+
+// Recorremos el arreglo de strings
+for (var i = 0; i < strings.length; i++) {
+// Verificamos si el string actual es más largo que el almacenado
+if (strings[i].length > masLarga.length) {
+masLarga = strings[i];
+}
+}
+
+// Retornamos el string más largo encontrado
+return masLarga;
+}
+
+module.exports = stringMasLarga;
+
+
+
+// No modifiques nada debajo de esta linea /
 
 module.exports = stringMasLarga
